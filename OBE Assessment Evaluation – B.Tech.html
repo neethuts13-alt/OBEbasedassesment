@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)file:///Users/neethuts/Downloads/OBE%20Student%20Assessment%20Evaluation.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>OBE Assessment Evaluation – B.Tech</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--tx:#1d2433;--mu:#667085;--bd:#dde1ea;--ac:#2f5bea;--ok:#1a9e5c;--wa:#d98a00;--er:#d6403a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12151c;--card:#1a1f2b;--tx:#e8ebf2;--mu:#98a2b3;--bd:#2c3445;--ac:#6c8cff;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{padding:16px 20px;border-bottom:1px solid var(--bd);background:var(--card)}
+h1{font-size:19px;margin:0}h1+p{margin:2px 0 0;color:var(--mu);font-size:13px}
+main{max-width:1100px;margin:0 auto;padding:16px}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
+.tabs{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:12px}
+.tabs button,.btn{border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:7px 13px;border-radius:8px;cursor:pointer;font:inherit}
+.tabs button.on,.btn.p{background:var(--ac);border-color:var(--ac);color:#fff}
+select,input{font:inherit;color:var(--tx);background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:5px 7px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px;margin-bottom:14px}
+.card h2{font-size:15px;margin:0 0 10px}
+.sc{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{border:1px solid var(--bd);padding:5px 7px;text-align:center;white-space:nowrap}th{background:var(--bg)}td.l,th.l{text-align:left}
+td input[type=number]{width:62px;text-align:center}td input.t{width:100%;min-width:110px}
+.m{width:34px;height:28px;border-radius:6px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);cursor:pointer}
+.m[data-v="1"]{background:#fde9b8;color:#5a4000}.m[data-v="2"]{background:#bfe3ff;color:#06385f}.m[data-v="3"]{background:#a6ecc4;color:#0b4a2a}
+.pill{display:inline-block;padding:1px 9px;border-radius:99px;font-weight:600;color:#fff}.l3{background:var(--ok)}.l2{background:#4a8fe0}.l1{background:var(--wa)}.l0{background:var(--er)}
+.bars{display:grid;gap:6px}.row{display:grid;grid-template-columns:54px 1fr 46px;gap:8px;align-items:center}
+.tr{height:16px;background:var(--bg);border-radius:8px;overflow:hidden;border:1px solid var(--bd)}.fl{height:100%;background:var(--ac)}
+.note{color:var(--mu);font-size:12px}textarea{width:100%;height:120px;font:12px monospace;background:var(--card);color:var(--tx);border:1px solid var(--bd);border-radius:8px}
+.hide{display:none}
+@media print{header,.tabs,.bar,.noprint{display:none!important}body{background:#fff;color:#000}.card{break-inside:avoid}}
+</style></head><body>
+<header><h1>OBE Student Assessment Evaluation</h1><p>B.Tech · Marks entry → CO attainment → CO‑PO mapping → PO attainment report</p></header>
+<main>
+<div class="bar"><label>Subject <select id="sub"><option value="0" selected="">CS201 – Data Structures</option><option value="1">MA101 – Engineering Mathematics</option></select></label>
+<label>Target % <input id="thr" type="number" min="1" max="100" value="60" style="width:62px" title="A student attains a CO when scoring at least this % in that CO's questions"></label>
+<span class="note">Attainment level: ≥70% of students = 3, ≥60% = 2, ≥50% = 1, else 0</span></div>
+<div class="tabs" id="tabs"><button data-t="setup" class="on">1 · CO &amp; CO‑PO Mapping</button><button data-t="marks" class="">2 · Marks Entry</button><button data-t="att" class="">3 · Attainment</button><button data-t="report" class="">4 · Generate Report</button></div>
+<section id="v"><div class="card"><h2>Course Outcomes (COs)</h2><div class="sc"><table><tbody><tr><th>CO</th><th class="l">Statement</th></tr><tr><td>CO1</td><td class="l"><input class="t" style="width:100%" data-co="0" value="Apply linear data structures"></td></tr><tr><td>CO2</td><td class="l"><input class="t" style="width:100%" data-co="1" value="Implement trees and graphs"></td></tr><tr><td>CO3</td><td class="l"><input class="t" style="width:100%" data-co="2" value="Analyse sorting &amp; searching"></td></tr><tr><td>CO4</td><td class="l"><input class="t" style="width:100%" data-co="3" value="Select suitable structures for problems"></td></tr></tbody></table></div></div>
+ <div class="card"><h2>CO–PO Mapping Matrix <span class="note">(click a cell: 0 none · 1 low · 2 medium · 3 high)</span></h2><div class="sc"><table><tbody><tr><th>CO</th><th>PO1</th><th>PO2</th><th>PO3</th><th>PO4</th><th>PO5</th><th>PO6</th><th>PO7</th><th>PO8</th><th>PO9</th><th>PO10</th><th>PO11</th><th>PO12</th></tr>
+ <tr><td>CO1</td><td><button class="m" data-v="3" data-i="0" data-j="0">3</button></td><td><button class="m" data-v="2" data-i="0" data-j="1">2</button></td><td><button class="m" data-v="1" data-i="0" data-j="2">1</button></td><td><button class="m" data-v="0" data-i="0" data-j="3">·</button></td><td><button class="m" data-v="0" data-i="0" data-j="4">·</button></td><td><button class="m" data-v="0" data-i="0" data-j="5">·</button></td><td><button class="m" data-v="0" data-i="0" data-j="6">·</button></td><td><button class="m" data-v="0" data-i="0" data-j="7">·</button></td><td><button class="m" data-v="0" data-i="0" data-j="8">·</button></td><td><button class="m" data-v="0" data-i="0" data-j="9">·</button></td><td><button class="m" data-v="0" data-i="0" data-j="10">·</button></td><td><button class="m" data-v="1" data-i="0" data-j="11">1</button></td></tr><tr><td>CO2</td><td><button class="m" data-v="2" data-i="1" data-j="0">2</button></td><td><button class="m" data-v="3" data-i="1" data-j="1">3</button></td><td><button class="m" data-v="2" data-i="1" data-j="2">2</button></td><td><button class="m" data-v="1" data-i="1" data-j="3">1</button></td><td><button class="m" data-v="0" data-i="1" data-j="4">·</button></td><td><button class="m" data-v="0" data-i="1" data-j="5">·</button></td><td><button class="m" data-v="0" data-i="1" data-j="6">·</button></td><td><button class="m" data-v="0" data-i="1" data-j="7">·</button></td><td><button class="m" data-v="0" data-i="1" data-j="8">·</button></td><td><button class="m" data-v="0" data-i="1" data-j="9">·</button></td><td><button class="m" data-v="0" data-i="1" data-j="10">·</button></td><td><button class="m" data-v="1" data-i="1" data-j="11">1</button></td></tr><tr><td>CO3</td><td><button class="m" data-v="2" data-i="2" data-j="0">2</button></td><td><button class="m" data-v="3" data-i="2" data-j="1">3</button></td><td><button class="m" data-v="3" data-i="2" data-j="2">3</button></td><td><button class="m" data-v="2" data-i="2" data-j="3">2</button></td><td><button class="m" data-v="1" data-i="2" data-j="4">1</button></td><td><button class="m" data-v="0" data-i="2" data-j="5">·</button></td><td><button class="m" data-v="0" data-i="2" data-j="6">·</button></td><td><button class="m" data-v="0" data-i="2" data-j="7">·</button></td><td><button class="m" data-v="0" data-i="2" data-j="8">·</button></td><td><button class="m" data-v="0" data-i="2" data-j="9">·</button></td><td><button class="m" data-v="0" data-i="2" data-j="10">·</button></td><td><button class="m" data-v="1" data-i="2" data-j="11">1</button></td></tr><tr><td>CO4</td><td><button class="m" data-v="1" data-i="3" data-j="0">1</button></td><td><button class="m" data-v="2" data-i="3" data-j="1">2</button></td><td><button class="m" data-v="2" data-i="3" data-j="2">2</button></td><td><button class="m" data-v="3" data-i="3" data-j="3">3</button></td><td><button class="m" data-v="2" data-i="3" data-j="4">2</button></td><td><button class="m" data-v="0" data-i="3" data-j="5">·</button></td><td><button class="m" data-v="0" data-i="3" data-j="6">·</button></td><td><button class="m" data-v="1" data-i="3" data-j="7">1</button></td><td><button class="m" data-v="0" data-i="3" data-j="8">·</button></td><td><button class="m" data-v="0" data-i="3" data-j="9">·</button></td><td><button class="m" data-v="0" data-i="3" data-j="10">·</button></td><td><button class="m" data-v="2" data-i="3" data-j="11">2</button></td></tr></tbody></table></div></div>
+ <div class="card"><h2>Add a new subject</h2><div class="bar"><input id="ns" placeholder="Subject name"><input id="nc" placeholder="Code" style="width:90px"><button class="btn p" id="addsub">Add subject</button></div><p class="note">A new subject starts with 4 COs, 4 assessment components and 5 blank students—edit them in the tabs.</p></div></section>
+</main>
+<script>
+const NP=12,PO=[...Array(NP)].map((_,i)=>'PO'+(i+1));
+let seed=7;const rnd=()=>(seed=(seed*9301+49297)%233280)/233280;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function mk(name,code,cos,cols,map,n,base){
+  const stu=[...Array(n)].map((_,i)=>({roll:'22B'+String(101+i),name:['Anu','Bala','Chitra','Deepak','Esha','Farhan','Gita','Hari','Indu','Jose'][i%10]+' '+['K','M','S','R'][i%4]}));
+  const marks=stu.map(()=>{const a=base+rnd()*0.35-0.1;return cols.map(c=>Math.max(0,Math.min(c.max,Math.round(c.max*(a+rnd()*0.3-0.15)))))});
+  return{name,code,cos,cols,map,stu,marks};
+}
+const S={cur:0,thr:60,tab:'setup',subs:[
+ mk('Data Structures','CS201',['Apply linear data structures','Implement trees and graphs','Analyse sorting & searching','Select suitable structures for problems'],
+  [{n:'CIE1 Q1',co:0,max:10},{n:'CIE1 Q2',co:1,max:10},{n:'CIE2 Q1',co:2,max:10},{n:'Assignment',co:3,max:10},{n:'SEE Part A',co:0,max:20},{n:'SEE Part B',co:1,max:20},{n:'SEE Part C',co:2,max:20},{n:'SEE Part D',co:3,max:20}],
+  [[3,2,1,0,0,0,0,0,0,0,0,1],[2,3,2,1,0,0,0,0,0,0,0,1],[2,3,3,2,1,0,0,0,0,0,0,1],[1,2,2,3,2,0,0,1,0,0,0,2]],10,0.68),
+ mk('Engineering Mathematics','MA101',['Solve differential equations','Apply Laplace transforms','Use Fourier series','Model engineering problems'],
+  [{n:'CIE1',co:0,max:20},{n:'CIE1 Q2',co:1,max:10},{n:'CIE2',co:2,max:20},{n:'Assignment',co:3,max:10},{n:'SEE A',co:0,max:15},{n:'SEE B',co:1,max:15},{n:'SEE C',co:2,max:15},{n:'SEE D',co:3,max:15}],
+  [[3,2,0,0,0,0,0,0,0,0,0,1],[3,2,1,0,0,0,0,0,0,0,0,1],[3,3,1,0,0,0,0,0,0,0,0,1],[2,3,3,2,0,0,0,0,0,0,0,2]],8,0.55)]};
+const cur=()=>S.subs[S.cur];
+function calc(s){
+  const N=s.stu.length,co=s.cos.map((_,i)=>{
+    const idx=s.cols.map((c,k)=>c.co==i?k:-1).filter(k=>k>=0);
+    const mx=idx.reduce((a,k)=>a+s.cols[k].max,0);
+    const pct=s.marks.map(r=>mx?idx.reduce((a,k)=>a+(+r[k]||0),0)/mx*100:null);
+    const ok=pct.filter(p=>p!==null&&p>=S.thr).length;
+    const att=mx&&N?ok/N*100:null;
+    const lvl=att===null?null:att>=70?3:att>=60?2:att>=50?1:0;
+    return{pct,att,lvl,has:!!mx};});
+  const po=PO.map((_,j)=>{let nu=0,de=0;co.forEach((c,i)=>{const w=+s.map[i][j]||0;if(c.has&&w){nu+=w*c.lvl;de+=w}});return de?nu/de:null});
+  return{co,po};
+}
+const pill=l=>l===null?'–':`<span class="pill l${l}">${l}</span>`;
+const f=(x,d=1)=>x===null?'–':x.toFixed(d);
+function setup(){const s=cur();
+ return `<div class="card"><h2>Course Outcomes (COs)</h2><div class="sc"><table><tr><th>CO</th><th class="l">Statement</th></tr>${s.cos.map((c,i)=>`<tr><td>CO${i+1}</td><td class="l"><input class="t" style="width:100%" data-co="${i}" value="${esc(c)}"></td></tr>`).join('')}</table></div></div>
+ <div class="card"><h2>CO–PO Mapping Matrix <span class="note">(click a cell: 0 none · 1 low · 2 medium · 3 high)</span></h2><div class="sc"><table><tr><th>CO</th>${PO.map(p=>`<th>${p}</th>`).join('')}</tr>
+ ${s.map.map((r,i)=>`<tr><td>CO${i+1}</td>${r.map((v,j)=>`<td><button class="m" data-v="${v}" data-i="${i}" data-j="${j}">${v||'·'}</button></td>`).join('')}</tr>`).join('')}</table></div></div>
+ <div class="card"><h2>Add a new subject</h2><div class="bar"><input id="ns" placeholder="Subject name"><input id="nc" placeholder="Code" style="width:90px"><button class="btn p" id="addsub">Add subject</button></div><p class="note">A new subject starts with 4 COs, 4 assessment components and 5 blank students—edit them in the tabs.</p></div>`;}
+function marks(){const s=cur();
+ return `<div class="card"><h2>Marks Entry — ${esc(s.name)} (${esc(s.code)})</h2><p class="note">Tag each assessment component with the CO it measures and set its maximum marks. Values update instantly.</p>
+ <div class="sc"><table><tr><th class="l">Roll No</th><th class="l">Name</th>${s.cols.map((c,k)=>`<th>${esc(c.n)}</th>`).join('')}</tr>
+ <tr><td class="l" colspan="2">CO tag</td>${s.cols.map((c,k)=>`<td><select data-ck="${k}" data-f="co">${s.cos.map((_,i)=>`<option value="${i}" ${c.co==i?'selected':''}>CO${i+1}</option>`).join('')}</select></td>`).join('')}</tr>
+ <tr><td class="l" colspan="2">Max marks</td>${s.cols.map((c,k)=>`<td><input type="number" min="1" data-ck="${k}" data-f="max" value="${c.max}"></td>`).join('')}</tr>
+ ${s.stu.map((st,r)=>`<tr><td class="l"><input class="t" data-sr="${r}" data-f="roll" value="${esc(st.roll)}" style="min-width:80px"></td><td class="l"><input class="t" data-sr="${r}" data-f="name" value="${esc(st.name)}"></td>${s.cols.map((c,k)=>`<td><input type="number" min="0" max="${c.max}" data-r="${r}" data-k="${k}" value="${s.marks[r][k]}"></td>`).join('')}</tr>`).join('')}</table></div>
+ <div class="bar" style="margin-top:10px"><button class="btn" id="addst">+ Add student</button><button class="btn" id="addcol">+ Add component</button></div></div>`;}
+function att(){const s=cur(),r=calc(s);
+ return `<div class="card"><h2>CO Attainment (direct, from marks)</h2><div class="sc"><table><tr><th>CO</th><th class="l">Statement</th><th>Students ≥ ${S.thr}%</th><th>Attainment %</th><th>Level</th></tr>
+ ${r.co.map((c,i)=>`<tr><td>CO${i+1}</td><td class="l">${esc(s.cos[i])}</td><td>${c.has?c.pct.filter(p=>p>=S.thr).length+' / '+s.stu.length:'–'}</td><td>${f(c.att)}</td><td>${pill(c.lvl)}</td></tr>`).join('')}</table></div></div>
+ <div class="card"><h2>PO Attainment (via CO–PO mapping, scale 0–3)</h2><p class="note">PO = Σ(CO level × mapping weight) ÷ Σ(mapping weight)</p><div class="bars">${r.po.map((v,j)=>`<div class="row"><b>${PO[j]}</b><div class="tr"><div class="fl" style="width:${v===null?0:v/3*100}%"></div></div><span>${f(v,2)}</span></div>`).join('')}</div></div>`;}
+function csv(s,r){
+ const L=[['Subject',s.name,s.code],[],['Roll','Name',...s.cos.map((_,i)=>'CO'+(i+1)+' %')]];
+ s.stu.forEach((st,i)=>L.push([st.roll,st.name,...r.co.map(c=>f(c.pct[i]))]));
+ L.push([],['CO','Attainment %','Level']);r.co.forEach((c,i)=>L.push(['CO'+(i+1),f(c.att),c.lvl===null?'':c.lvl]));
+ L.push([],['PO','Attainment (0-3)']);r.po.forEach((v,j)=>L.push([PO[j],f(v,2)]));
+ return L.map(a=>a.map(x=>'"'+String(x).replace(/"/g,'""')+'"').join(',')).join('\n');}
+function report(){const s=cur(),r=calc(s),all=S.subs.map(x=>({x,r:calc(x)}));
+ const pass=s.stu.map((_,i)=>r.co.filter(c=>c.pct[i]!==null&&c.pct[i]>=S.thr).length);
+ return `<div class="card"><div class="bar noprint"><button class="btn p" id="print">Print / Save as PDF</button><span class="note">Use your browser's print dialog and choose “Save as PDF”.</span></div>
+ <h2 style="font-size:18px">Course Attainment Report</h2><p><b>${esc(s.name)}</b> (${esc(s.code)}) · Students: ${s.stu.length} · CO target: ${S.thr}% · Generated ${new Date().toLocaleDateString()}</p>
+ <h2>Student‑wise CO performance (%)</h2><div class="sc"><table><tr><th class="l">Roll</th><th class="l">Name</th>${s.cos.map((_,i)=>`<th>CO${i+1}</th>`).join('')}<th>COs attained</th></tr>
+ ${s.stu.map((st,i)=>`<tr><td class="l">${esc(st.roll)}</td><td class="l">${esc(st.name)}</td>${r.co.map(c=>`<td style="color:${c.pct[i]>=S.thr?'var(--ok)':'var(--er)'}">${f(c.pct[i])}</td>`).join('')}<td>${pass[i]}/${s.cos.length}</td></tr>`).join('')}</table></div></div>
+ <div class="card"><h2>CO attainment</h2><div class="sc"><table><tr><th>CO</th><th>Attainment %</th><th>Level</th>${PO.map(p=>`<th>${p}</th>`).join('')}</tr>
+ ${r.co.map((c,i)=>`<tr><td>CO${i+1}</td><td>${f(c.att)}</td><td>${pill(c.lvl)}</td>${s.map[i].map(v=>`<td>${v||''}</td>`).join('')}</tr>`).join('')}
+ <tr><th colspan="3" class="l">PO attainment (0–3)</th>${r.po.map(v=>`<th>${f(v,2)}</th>`).join('')}</tr></table></div></div>
+ <div class="card"><h2>Programme view — PO attainment across subjects</h2><div class="sc"><table><tr><th class="l">Subject</th>${PO.map(p=>`<th>${p}</th>`).join('')}</tr>
+ ${all.map(a=>`<tr><td class="l">${esc(a.x.code)}</td>${a.r.po.map(v=>`<td>${f(v,2)}</td>`).join('')}</tr>`).join('')}
+ <tr><th class="l">Average</th>${PO.map((_,j)=>{const v=all.map(a=>a.r.po[j]).filter(x=>x!==null);return`<th>${v.length?f(v.reduce((a,b)=>a+b)/v.length,2):'–'}</th>`}).join('')}</tr></table></div></div>
+ <div class="card noprint"><h2>CSV export</h2><p class="note">Copy this text into a .csv file to open in Excel.</p><textarea readonly>${esc(csv(s,r))}</textarea></div>`;}
+const TABS={setup:['1 · CO & CO‑PO Mapping',setup],marks:['2 · Marks Entry',marks],att:['3 · Attainment',att],report:['4 · Generate Report',report]};
+function draw(){
+ document.getElementById('sub').innerHTML=S.subs.map((x,i)=>`<option value="${i}" ${i==S.cur?'selected':''}>${esc(x.code)} – ${esc(x.name)}</option>`).join('');
+ document.getElementById('tabs').innerHTML=Object.entries(TABS).map(([k,v])=>`<button data-t="${k}" class="${k==S.tab?'on':''}">${v[0]}</button>`).join('');
+ document.getElementById('v').innerHTML=TABS[S.tab][1]();
+}
+document.addEventListener('click',e=>{const t=e.target;
+ if(t.dataset.t){S.tab=t.dataset.t;draw()}
+ else if(t.classList.contains('m')){const s=cur(),i=+t.dataset.i,j=+t.dataset.j;s.map[i][j]=(s.map[i][j]+1)%4;t.dataset.v=s.map[i][j];t.textContent=s.map[i][j]||'·'}
+ else if(t.id=='addst'){const s=cur();s.stu.push({roll:'22B'+(101+s.stu.length),name:'New Student'});s.marks.push(s.cols.map(()=>0));draw()}
+ else if(t.id=='addcol'){const s=cur();s.cols.push({n:'Component '+(s.cols.length+1),co:0,max:10});s.marks.forEach(r=>r.push(0));draw()}
+ else if(t.id=='addsub'){const n=document.getElementById('ns').value.trim()||'New Subject',c=document.getElementById('nc').value.trim()||'NEW'+(S.subs.length+1);
+  const cols=[0,1,2,3].map(i=>({n:'Test '+(i+1),co:i,max:10}));
+  S.subs.push({name:n,code:c,cos:['CO1 statement','CO2 statement','CO3 statement','CO4 statement'],cols,map:[0,1,2,3].map(()=>Array(NP).fill(0)),stu:[0,1,2,3,4].map(i=>({roll:'22B'+(101+i),name:'Student '+(i+1)})),marks:[0,1,2,3,4].map(()=>[0,0,0,0])});
+  S.cur=S.subs.length-1;draw()}
+ else if(t.id=='print'){try{window.print()}catch(x){}}
+});
+document.addEventListener('input',e=>{const t=e.target,s=cur(),d=t.dataset;
+ if(t.id=='thr'){S.thr=Math.max(1,Math.min(100,+t.value||60));return}
+ if(d.co!==undefined)s.cos[d.co]=t.value;
+ else if(d.r!==undefined){let v=+t.value,m=s.cols[d.k].max;if(v>m){v=m;t.value=m}if(v<0){v=0;t.value=0}s.marks[d.r][d.k]=t.value===''?0:v}
+ else if(d.ck!==undefined){s.cols[d.ck][d.f]=d.f=='max'?Math.max(1,+t.value||1):+t.value}
+ else if(d.sr!==undefined)s.stu[d.sr][d.f]=t.value;
+});
+document.addEventListener('change',e=>{const t=e.target;
+ if(t.id=='sub'){S.cur=+t.value;draw()}
+ else if(t.dataset.f=='max')draw();
+});
+draw();
+</script>
+</body></html>
